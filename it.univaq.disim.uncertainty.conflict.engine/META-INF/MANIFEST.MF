@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Engine
+Bundle-SymbolicName: it.univaq.disim.uncertainty.conflict.engine
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: it.univaq.disim.uncertainty.ufamilies;bundle-version="1.0.0",
+ org.eclipse.emf.compare;bundle-version="3.5.1",
+ org.eclipse.emf.compare.diff;bundle-version="1.3.2",
+ org.eclipse.emf.ecore.xmi;bundle-version="2.13.0",
+ com.google.guava;bundle-version="21.0.0",
+ org.apache.log4j;bundle-version="1.2.15",
+ org.eclipse.core.runtime;bundle-version="3.13.0",
+ org.eclipse.emf.ecore;visibility:=reexport

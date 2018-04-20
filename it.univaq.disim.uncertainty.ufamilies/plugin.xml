@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated UFamily -->
+      <package
+            uri="http://it.univaq.disim/uncertainty.ufamily"
+            class="Families.FamiliesPackage"
+            genModel="model/UFamily.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated UFamily -->
+      <package
+            uri="uncertainty"
+            class="Families.uncertainty.UncertaintyPackage"
+            genModel="model/UFamily.genmodel"/>
+   </extension>
+
+</plugin>

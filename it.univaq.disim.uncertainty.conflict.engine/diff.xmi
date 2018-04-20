@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ASCII"?>
+<compare:Comparison xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:compare="http://www.eclipse.org/emf/compare" threeWay="true">
+  <matchedResources leftURI="models/FamilyRegistry_3_L.xmi"/>
+  <matchedResources rightURI="models/FamilyRegistry_3_R.xmi"/>
+  <matchedResources originURI="models/FamilyRegistry_3_O.xmi"/>
+  <matches>
+    <submatches>
+      <submatches>
+        <left href="models/FamilyRegistry_3_L.xmi#//@families.1/@mother"/>
+      </submatches>
+      <submatches>
+        <left href="models/FamilyRegistry_3_L.xmi#//@families.1/@father"/>
+      </submatches>
+      <differences xsi:type="compare:ReferenceChange" requires="//@matches.0/@differences.0">
+        <reference href="models/Families2.ecore#//Family/mother"/>
+        <value href="models/FamilyRegistry_3_L.xmi#//@families.1/@mother"/>
+      </differences>
+      <differences xsi:type="compare:ReferenceChange" requires="//@matches.0/@differences.0">
+        <reference href="models/Families2.ecore#//Family/father"/>
+        <value href="models/FamilyRegistry_3_L.xmi#//@families.1/@father"/>
+      </differences>
+      <left href="models/FamilyRegistry_3_L.xmi#//@families.1"/>
+    </submatches>
+    <submatches>
+      <submatches>
+        <left href="models/FamilyRegistry_3_L.xmi#//@families.0/@sons.0"/>
+        <right href="models/FamilyRegistry_3_R.xmi#//@families.0/@sons.0"/>
+        <origin href="models/FamilyRegistry_3_O.xmi#//@families.0/@sons.0"/>
+      </submatches>
+      <submatches>
+        <left href="models/FamilyRegistry_3_L.xmi#//@families.0/@mother"/>
+      </submatches>
+      <submatches>
+        <right href="models/FamilyRegistry_3_R.xmi#//@families.0/@sons.1"/>
+      </submatches>
+      <submatches>
+        <right href="models/FamilyRegistry_3_R.xmi#//@families.0/@daughters.0"/>
+      </submatches>
+      <submatches>
+        <right href="models/FamilyRegistry_3_R.xmi#//@families.0/@mother"/>
+      </submatches>
+      <differences xsi:type="compare:ReferenceChange" source="RIGHT">
+        <reference href="models/Families2.ecore#//Family/sons"/>
+        <value href="models/FamilyRegistry_3_R.xmi#//@families.0/@sons.1"/>
+      </differences>
+      <differences xsi:type="compare:ReferenceChange" source="RIGHT">
+        <reference href="models/Families2.ecore#//Family/daughters"/>
+        <value href="models/FamilyRegistry_3_R.xmi#//@families.0/@daughters.0"/>
+      </differences>
+      <differences xsi:type="compare:ReferenceChange" conflict="//@conflicts.0">
+        <reference href="models/Families2.ecore#//Family/mother"/>
+        <value href="models/FamilyRegistry_3_L.xmi#//@families.0/@mother"/>
+      </differences>
+      <differences xsi:type="compare:ReferenceChange" source="RIGHT" conflict="//@conflicts.0">
+        <reference href="models/Families2.ecore#//Family/mother"/>
+        <value href="models/FamilyRegistry_3_R.xmi#//@families.0/@mother"/>
+      </differences>
+      <left href="models/FamilyRegistry_3_L.xmi#//@families.0"/>
+      <right href="models/FamilyRegistry_3_R.xmi#//@families.0"/>
+      <origin href="models/FamilyRegistry_3_O.xmi#//@families.0"/>
+    </submatches>
+    <differences xsi:type="compare:ReferenceChange" requiredBy="//@matches.0/@submatches.0/@differences.0 //@matches.0/@submatches.0/@differences.1">
+      <reference href="models/Families2.ecore#//FamilyRegistry/families"/>
+      <value href="models/FamilyRegistry_3_L.xmi#//@families.1"/>
+    </differences>
+    <left href="models/FamilyRegistry_3_L.xmi#/"/>
+    <right href="models/FamilyRegistry_3_R.xmi#/"/>
+    <origin href="models/FamilyRegistry_3_O.xmi#/"/>
+  </matches>
+  <conflicts differences="//@matches.0/@submatches.1/@differences.2 //@matches.0/@submatches.1/@differences.3"/>
+</compare:Comparison>
