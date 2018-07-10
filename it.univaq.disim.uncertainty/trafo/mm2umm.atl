@@ -336,7 +336,7 @@ rule EReference {
 		if (thisModule.inElements.includes(t.eType)) {
 			
 			thisModule.getEClassOut(t.eType);
-			t.eType <- thisModule.eClassOut.eSuperTypes->select(e | e.name = 'I'+thisModule.eClassOut.name).first();
+			t.eType <- thisModule.eClassOut.eSuperTypes->select(e | e.name = 'a'+thisModule.eClassOut.name).first();
 
 		}
 		
