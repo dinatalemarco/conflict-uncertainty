@@ -1,4 +1,4 @@
-This repository contains tools and dataset for our paper at Models 2018.
+This repository contains tools and dataset for our paper at SLE 2018.
 
 <b>Postponing decision making in conflict resolution</b>
 
